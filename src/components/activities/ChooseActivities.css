@@ -1,0 +1,149 @@
+/* Base styles */
+.activitiesHeader {
+  
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 2.1875rem; /* 35px / 16 = 2.1875rem */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.choose-activities {
+  border-top: 10vh solid #1540c2; 
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.search-bar {
+  width: 80%;
+  max-width: 37.5rem; /* 600px / 16 = 37.5rem */
+  padding: 0.75rem 1.25rem; /* 12px/16, 20px/16 */
+  margin-top: 1.25rem; /* 20px / 16 = 1.25rem */
+  margin-bottom: 1.25rem; /* 20px / 16 = 1.25rem */
+  font-size: 1.125rem; /* 18px / 16 = 1.125rem */
+  border: 0.0625rem solid #ccc; /* 1px / 16 = 0.0625rem */
+  border-radius: 0.3125rem; /* 5px / 16 = 0.3125rem */
+  outline: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-bar:focus {
+  border-color: #004ba0;
+}
+
+.activities-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.activities-list li {
+  display: inline-block;
+  margin: 0.3125rem 0; /* 5px / 16 = 0.3125rem */
+  width: 100%;
+}
+
+.activities-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1.25rem; /* 20px / 16 = 1.25rem */
+  gap: 3.125rem; /* 50px / 16 = 3.125rem */
+}
+
+.activity-button {
+  width: 9.375rem; /* 150px / 16 = 9.375rem */
+  height: 3.125rem; /* 50px / 16 = 3.125rem */
+  margin: 0px;
+  padding: 0;
+  font-size: 1rem; /* 16px / 16 = 1rem */
+  color: #000;
+  
+  border: 0.0625rem solid #ddd; /* 1px / 16 = 0.0625rem */
+  border-radius: 0.625rem; /* 10px / 16 = 0.625rem */
+  background-color: #f0f0f0;
+  cursor: pointer;
+  text-align: center;
+  line-height: 3.125rem; /* 50px / 16 = 3.125rem */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.activity-button:hover {
+  background-color: #e0e0e0;
+}
+
+.activity-button.selected {
+  background-color: #1540c2;
+  color: white;
+}
+
+.next-button {
+  position: fixed;
+  display: inline-block;
+  bottom: 1.25rem; /* 20px / 16 = 1.25rem */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7.5rem; /* 120px / 16 = 7.5rem */
+  height: 3.125rem; /* 50px / 16 = 3.125rem */
+  background-color: white;
+  color: black;
+  border: 0.0625rem solid black; /* 1px / 16 = 0.0625rem */
+  border-radius: 1.25rem; /* 20px / 16 = 1.25rem */
+  cursor: pointer;
+  text-align: center;
+  line-height: 3.125rem; /* 50px / 16 = 3.125rem */
+  font-size: 1.5rem; /* Already in rem */
+  z-index: 1000;
+  padding: 0 0.9375rem; /* 15px / 16 = 0.9375rem */
+  box-sizing: border-box;
+}
+
+.next-button:hover {
+  background-color: rgba(255, 255, 255, 0.781);
+  box-shadow: 0.3125rem 0.3125rem; /* 5px / 16 = 0.3125rem */
+}
+
+/* Media queries for mobile devices */
+@media (max-width: 48rem) { /* 768px / 16 = 48rem */
+  .activitiesHeader {
+      font-size: 1.5rem; /* 24px / 16 = 1.5rem */
+  }
+
+  .search-bar {
+      width: 90%;
+      font-size: 1rem; /* 16px / 16 = 1rem */
+  }
+
+  .activity-button {
+      width: 6.25rem; /* 100px / 16 = 6.25rem */
+      height: 2.5rem; /* 40px / 16 = 2.5rem */
+      font-size: 0.875rem; /* 14px / 16 = 0.875rem */
+  }
+
+  .next-button {
+    width: 6.25rem; /* Adjust based on your design */
+    height: 2.5rem; /* Adjust based on your design */
+    font-size: 1.125rem; /* Adjust based on your design */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: normal; /* Adjust based on your design */
+}
+
+  .activities-buttons {
+      gap: 1.25rem; /* 20px / 16 = 1.25rem */
+  }
+}
+

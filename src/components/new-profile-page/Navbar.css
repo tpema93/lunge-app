@@ -1,0 +1,17 @@
+
+.navbar-header {
+    height: 3rem;
+    width: auto;
+    background-color: #F2AD46;
+}
+
+.navbar-logo-container {
+    width: 4rem;
+    height: 3rem;
+    object-fit: contain;
+}
+
+.navbar-logo-container:hover {
+    cursor: pointer;
+
+}

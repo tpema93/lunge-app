@@ -1,0 +1,13 @@
+ .homepage-container {
+    display: flex;
+    flex-direction: column; 
+    height: 100vh;
+  }
+  
+  .content {
+    font-family: Inter, sans-serif;
+    flex-grow: 1;
+    padding: 200px;
+    padding-top: 400px; 
+  }
+   

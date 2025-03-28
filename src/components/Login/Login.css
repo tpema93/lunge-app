@@ -1,0 +1,114 @@
+/* General body styling */
+.login-body {
+    font-family: Inter;
+    background: #FFF;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+/* style for the login container */
+.login-form-container {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 11px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+
+/* style for the input fields */
+.login-text-input,
+.login-text-password{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+
+.login-text-input:invalid,
+.login-text-password:invalid {
+    outline: solid red 0.0625rem;
+}
+
+.login-text-input:placeholder-shown,
+.login-text-password:placeholder-shown {
+    outline: none;
+}
+
+.login-text-input:focus,
+.login-text-password:focus{
+    outline: solid #1540c2 0.0625rem;
+}
+
+
+/* style for the button */
+.login-buttons {
+    background-color:#1540c2; 
+    color: white;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+ 
+/* Hover effect for button */
+.login-buttons:hover {
+    background-color: #1540c2;
+}
+
+
+/* style for the popup message */
+.login-popup {
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+/* style for the popup message text */
+.login-p {
+    margin: 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/* header style */
+.login-h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* style for the link component */
+.login-signup-redirect {
+    text-align: center;
+    margin-top: 16px; 
+    color: black; 
+}
+
+.login-signup-redirect a {
+    color: #1540c2;
+    cursor: pointer;
+    text-decoration: none;
+}

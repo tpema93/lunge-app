@@ -1,0 +1,38 @@
+
+.matches-container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 10rem;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.matches-h1 {
+    color: #333;
+    text-align: center;
+}
+
+.matches-ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.matches-li {
+    background-color: #f5f5f5;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.matches-li:hover {
+    background-color: #e0e0e0;
+}
+
+.matches-error {
+    color: #ff0000;
+    text-align: center;
+    margin-top: 20px;
+} 

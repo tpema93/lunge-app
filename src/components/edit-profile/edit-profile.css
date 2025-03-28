@@ -1,0 +1,250 @@
+.edit-profile-page-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 90vh;
+    margin-top: 10vh;
+  }
+  
+  
+  .edit-profile-container {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    justify-content: center;
+    padding: 1.875rem 0rem 0rem;
+  
+  }
+    
+  .edit-profile-left-column {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    align-items: center;
+  }
+    
+  .edit-profile-text {
+    padding: .5rem;
+    font-weight: bold;
+    border: none;
+    background-color: #D9D9D9;
+    border-radius: .375rem;
+    width: 16.5rem;
+  }
+  
+  .edit-profile-birthday {
+    padding: .5rem;
+    font-weight: bold;
+    border: none;
+    background-color: #D9D9D9;
+    border-radius: .375rem;
+  }
+  
+  
+  .edit-profile-button {
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 1.25rem;
+    padding: .375rem .938rem;
+    width: 5.625rem;
+  
+    font-weight: 600;
+  }
+  
+  .edit-profile-button-selected {
+    background-color: #1540c2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 1.25rem;
+    padding: .375rem .938rem;
+    width: 5.625rem;
+  
+    font-weight: 600;
+  }
+  
+  .edit-your-gender-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .edit-gender-buttons {
+    margin: 0rem .125rem;
+  }
+  
+  .edit-pref-buttons {
+    margin: .125rem;
+  }
+  
+  .edit-show-other-gender-button {
+    margin: .125rem 0rem;
+  }
+  
+  
+  
+  
+  .edit-gender-pref-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+    .continue-button-off {
+      background-color: #A0999B;
+      color: #D9D9D9;
+      height: 3.125rem;
+      width: 10.625rem;
+      font-size: 1.875rem;
+      border-radius: 3rem;
+    }
+  
+    .continue-button-on {
+      background-color: #78CE81;
+      color: #FFFFFF;
+      filter: drop-shadow(.125rem .125rem #D9D9D9);
+      height: 3.125rem;
+      width: 10.625rem;
+      font-size: 30px;
+      border-radius: 3rem;
+    }
+  
+  .edit-profile-bio {
+      background-color: #D9D9D9;
+      border-radius: .625rem;
+      border: none;
+      resize: none;
+      width: 16.6rem;
+      padding: .5rem;
+      height: 10rem;
+    }
+  
+    
+  .edit-profile-right-column {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3rem;
+  
+  }
+  
+    .upload-images-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-row-top {
+      position: relative;
+      display: inline-block;
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .image-row-bottom {
+      position: relative;
+      display: inline-block;
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .upload-image-square {
+      height: 12.5rem;
+      width: 12.5rem;
+      object-fit: contain;
+      border: .125rem solid gray;
+      border-radius: .625rem;
+      
+      
+    }
+  
+  
+    
+  
+    input[type='file'].file-input {
+      position: absolute;
+      transform: scale(3);
+      left: 5rem;
+      top:1rem;
+      opacity:0;
+      cursor:pointer;
+      
+      
+      
+      
+    }
+  
+  
+  
+  
+    .custom-file-upload label {
+      border-radius: 100%;
+      height: 1.875rem;
+      width: 1.875rem;
+      object-fit: contain;
+      border: .125rem solid gray;
+    }
+  
+    .add-file-button {
+      padding: .625rem .625rem;
+      border-radius: 50%
+    }
+    
+    .uploaded-image {
+      height: 12.5rem;
+      width: 12.5rem;
+    }
+  
+    .image-container {
+      padding: 1rem;
+      object-fit: contain;
+      width: 14rem;
+      height: 14rem;
+    }
+  
+    
+  
+    .continue-button-container {
+      position: relative;
+      display: inline-block;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem;
+    }
+
+    @media (max-width: 1100px) {
+      .image-row-top {
+        flex-direction: column;
+      }
+      .image-row-bottom {
+        flex-direction: column;
+      }
+    }
+  
+    @media (max-width: 700px) {
+      .edit-profile-container {
+        flex-direction: column;
+      }
+    }
+  
+    
+  
+  
+  /* 
+  height: 50px;
+      width: 50px;
+      border-radius:30px;
+      border: 2px solid black;
+      background-color: white;
+      */
+  
+      /*
+  
+      height: 50px;
+      width: 50px;
+      border: 3px solid black;
+      border-radius: 30px;
+  
+      */

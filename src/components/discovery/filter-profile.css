@@ -1,0 +1,112 @@
+
+.filter-profile-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f2f5; 
+    color: #333;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+
+.filter-form-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    width: 90%; 
+    max-width: 450px;
+    box-sizing: border-box;
+    transition: all 0.3s ease; 
+}
+
+
+.filter-input-container {
+    margin-bottom: 30px;
+}
+
+.activities-container {
+    margin-top: 10px; /* Additional spacing above activities section */
+}
+
+.activities-checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjusted for spacing between checkboxes */
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 10px; /* Padding around checkboxes for better spacing */
+}
+
+.activity-option {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between checkbox and label */
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+
+.filter-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.filter-apply-button,
+.filter-go-back-button {
+    background-color: #1540c2; 
+    color: #ffffff;
+    padding: 12px 20px; 
+    margin: 20px 0 10px; 
+    border: none;
+    border-radius: 6px; 
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px; 
+    transition: background-color 0.3s ease; 
+}
+
+.filter-apply-button:hover,
+.filter-go-back-button:hover {
+    background-color: #1030a0; 
+}
+
+input[type="number"],
+input[type="text"],
+select {
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 5px;
+    border: 2px solid #167bff; 
+    border-radius: 6px; 
+    outline: none;
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease; 
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+select:focus {
+    border-color: #0a58ca;
+}
+
+
+@media (max-width: 768px) {
+    .filter-form-container {
+        width: 90%; 
+        margin: auto;
+    }
+
+    .filter-form {
+        width: 100%; 
+    }
+}
+
+

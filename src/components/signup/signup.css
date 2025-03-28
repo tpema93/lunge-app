@@ -1,0 +1,99 @@
+/* General body styling */
+.signup-body {
+    font-family: Inter;
+    background: #FFF;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+/* Style for the form container */
+.signup-form-container {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.625rem 0.6875rem rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 25rem;
+    box-sizing: border-box;
+}
+
+/* Style for the input fields */
+.signup-text-input,
+.signup-text-password{
+    width: 100%;
+    padding: 0.625rem;
+    margin: 0.625rem 0;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+}
+
+.signup-text-input:invalid,
+.signup-text-password:invalid {
+    outline: solid red 0.0625rem;
+}
+
+.signup-text-input:placeholder-shown,
+.signup-text-password:placeholder-shown {
+    outline: none;
+}
+
+.signup-text-input:focus,
+.signup-text-password:focus{
+    outline: solid #1540c2 0.0625rem;
+}
+::placeholder {
+    color: #888;
+}
+
+/* Style for the button */
+.signup-buttons {
+    background-color: #1540c2; 
+    color: white;
+    padding: 0.625rem 1.25rem;
+    margin: 0.625rem 0;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    width: 100%;
+} 
+ 
+/* Hover effect for button */
+.signup-buttons:hover {
+    background-color: #1540c2; /* Darker shade for hover effect */
+}
+
+/* Style for the signup message */
+.signup-p {
+    color: #28a745; /* Success color, change if needed */
+    text-align: center;
+}
+
+/* Header style */
+.signup-h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem; /* Adjust as per the image */
+}
+
+.signup-toLogin{
+    margin-left: 2.5rem;
+}
+
+/* style for the link component */
+.signup-login-redirect {
+    text-align: center;
+    margin-top: 16px; 
+    color: black; 
+}
+.signup-login-redirect a {
+    color: #1540c2;
+    cursor: pointer;
+    text-decoration: none;
+}
